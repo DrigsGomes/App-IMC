@@ -4,6 +4,7 @@ import {View, Text, StyleSheet, TextInput} from 'react-native';
 export default function App(){
   const [peso, setPeso] = useState('');
   const [altura, setAltura] = useState('');
+
   return(
     <View styLe={styles.container}>
 
@@ -15,7 +16,9 @@ export default function App(){
       onChangeText={(peso) => setPeso(peso)}
       placeholder= 'Peso (kg)'
       keyboardType='numeric'
+      
       />
+
       <TextInput
       styLe={styles.input} 
       value={altura}
@@ -49,7 +52,6 @@ const styles = StyleSheet.create({
     padding: 10,
     color:'#FFF',
     fontSize:24,
-
-  }
+  },
 
 });
