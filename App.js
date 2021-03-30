@@ -5,6 +5,7 @@ export default function App(){
   const [peso, setPeso] = useState('');
   const [altura, setAltura] = useState('');
 
+  /* Função para calcular o IMC */
   function handleSubmit(){
     const alt = altura /100;
     const imc = peso /(alt * alt);
@@ -15,11 +16,7 @@ export default function App(){
       alert('Peso ideal! ' + imc.toFixed(2));
     } else if(imc >= 24.9 && imc < 34.9 ){
       alert('Levemente acima do peso! ' + imc.toFixed(2));
-
     }
-
-  
-
   }
 
   return(
@@ -27,7 +24,7 @@ export default function App(){
 
       <Text style={styles.title}>Calcule seu IMC</Text>
       
-
+  {/* Inputs e botão do App */}    
       <TextInput
       style={styles.input} 
       value={peso}
@@ -57,6 +54,8 @@ export default function App(){
 
   );
 }
+
+/* Estilo do App */
 
 const styles = StyleSheet.create({
   
