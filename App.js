@@ -28,6 +28,7 @@ export default function App(){
       <TextInput
       style={styles.input} 
       value={peso}
+      placeholderTextColor="#fff"
       onChangeText={(peso) => setPeso(peso)}
       placeholder= 'Peso (kg)'
       keyboardType='numeric'
@@ -37,6 +38,7 @@ export default function App(){
       <TextInput
       style={styles.input} 
       value={altura}
+      placeholderTextColor="#fff"
       onChangeText={(altura) => setAltura(altura)}
       placeholder= 'Altura (cm)'
       keyboardType='numeric'
@@ -61,6 +63,7 @@ const styles = StyleSheet.create({
   
   container:{
     flex:1,
+    backgroundColor:'#ddd'
   },
 
   title:{
@@ -74,7 +77,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin:15,
     padding: 10,
-    color:'#FFF',
     fontSize:24,
   },
 
